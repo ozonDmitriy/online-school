@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Иконка кубка">
+
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4c0b8a"/>
+      <stop offset="52%" stop-color="#6d28d9"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.72"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="22%" r="75%">
+      <stop offset="0%" stop-color="#c4b5fd" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#6d28d9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#2e1065" flood-opacity="0.35"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.3"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="none"/>
+  <ellipse cx="256" cy="420" rx="122" ry="24" fill="#2e1065" opacity="0.16" filter="url(#soft)"/>
+  <g filter="url(#shadow)">
+    <path d="M146 126h-48c-16 0-29 13-29 29v29c0 62 45 114 104 125 11 22 29 40 51 51v34h-47c-17 0-31 14-31 31v13h220v-13c0-17-14-31-31-31h-47v-34c22-11 40-29 51-51 59-11 104-63 104-125v-29c0-16-13-29-29-29h-48v38h36v20c0 37-23 70-57 84 2-11 3-22 3-34V96H146v138c0 12 1 23 3 34-34-14-57-47-57-84v-20h36v-38Z" fill="url(#g)"/>
+    <path d="M175 126h162v105c0 67-36 112-81 112s-81-45-81-112V126Z" fill="url(#glow)" opacity="0.9"/>
+    <path d="M199 132h56c-13 34-18 77-12 119 3 24 10 47 20 66-51-5-77-51-77-101v-70c0-8 5-14 13-14Z" fill="url(#shine)" opacity="0.62"/>
+    <path d="M217 407h78c12 0 22 10 22 22v9H195v-9c0-12 10-22 22-22Z" fill="#5b21b6" opacity="0.92"/>
+    <path d="M225 356h62v51h-62z" fill="#581c87" opacity="0.5"/>
+    <path d="M208 157c0-8 7-15 15-15h66" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity="0.36"/>
+  </g>
+</svg>

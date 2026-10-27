@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="512" viewBox="0 0 1536 512" role="img" aria-label="Три иконки: кубок, шапка выпускника, ЕГЭ">
+
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4c0b8a"/>
+      <stop offset="52%" stop-color="#6d28d9"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.72"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="22%" r="75%">
+      <stop offset="0%" stop-color="#c4b5fd" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#6d28d9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#2e1065" flood-opacity="0.35"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.3"/>
+    </filter>
+  </defs>
+
+  <g transform="translate(0 0)">
+    <rect width="512" height="512" rx="112" fill="none"/>
+    <ellipse cx="256" cy="420" rx="122" ry="24" fill="#2e1065" opacity="0.16" filter="url(#soft)"/>
+    <g filter="url(#shadow)">
+      <path d="M146 126h-48c-16 0-29 13-29 29v29c0 62 45 114 104 125 11 22 29 40 51 51v34h-47c-17 0-31 14-31 31v13h220v-13c0-17-14-31-31-31h-47v-34c22-11 40-29 51-51 59-11 104-63 104-125v-29c0-16-13-29-29-29h-48v38h36v20c0 37-23 70-57 84 2-11 3-22 3-34V96H146v138c0 12 1 23 3 34-34-14-57-47-57-84v-20h36v-38Z" fill="url(#g)"/>
+      <path d="M175 126h162v105c0 67-36 112-81 112s-81-45-81-112V126Z" fill="url(#glow)" opacity="0.9"/>
+      <path d="M199 132h56c-13 34-18 77-12 119 3 24 10 47 20 66-51-5-77-51-77-101v-70c0-8 5-14 13-14Z" fill="url(#shine)" opacity="0.62"/>
+      <path d="M217 407h78c12 0 22 10 22 22v9H195v-9c0-12 10-22 22-22Z" fill="#5b21b6" opacity="0.92"/>
+      <path d="M225 356h62v51h-62z" fill="#581c87" opacity="0.5"/>
+      <path d="M208 157c0-8 7-15 15-15h66" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity="0.36"/>
+    </g>
+  </g>
+  <g transform="translate(512 0)">
+    <rect width="512" height="512" rx="112" fill="none"/>
+    <ellipse cx="256" cy="381" rx="150" ry="27" fill="#2e1065" opacity="0.16" filter="url(#soft)"/>
+    <g filter="url(#shadow)">
+      <path d="M62 198 256 98l194 100-194 100L62 198Z" fill="url(#g)"/>
+      <path d="M256 98 450 198 256 298V98Z" fill="#4c1d95" opacity="0.32"/>
+      <path d="M103 198 256 120l153 78-153 78-153-78Z" fill="url(#glow)" opacity="0.9"/>
+      <path d="M151 252c25 23 64 37 105 37s80-14 105-37v65c0 20-47 56-105 56s-105-36-105-56v-65Z" fill="url(#g)"/>
+      <path d="M174 270c23 14 51 22 82 22s59-8 82-22v28c-24 17-51 25-82 25s-58-8-82-25v-28Z" fill="#7c3aed" opacity="0.45"/>
+      <path d="M256 198h120c12 0 21 9 21 21v58" fill="none" stroke="#4c0b8a" stroke-width="17" stroke-linecap="round"/>
+      <circle cx="397" cy="279" r="18" fill="url(#g)"/>
+      <path d="M397 297c-20 29-25 55-20 84 1 9 10 14 18 10l23-11c7-3 10-11 6-18-12-23-14-43-9-62l-18-3Z" fill="url(#g)"/>
+      <path d="M142 190 256 133" stroke="#fff" stroke-width="11" stroke-linecap="round" opacity="0.34"/>
+      <path d="M168 283c22 19 54 29 88 29" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity="0.22"/>
+    </g>
+  </g>
+  <g transform="translate(1024 0)">
+    <rect width="512" height="512" rx="112" fill="none"/>
+    <ellipse cx="256" cy="402" rx="151" ry="29" fill="#2e1065" opacity="0.16" filter="url(#soft)"/>
+    <g filter="url(#shadow)">
+      <rect x="88" y="116" width="336" height="252" rx="42" fill="url(#g)"/>
+      <path d="M121 116h259c24 0 44 20 44 44v68c-61-15-117-7-169 10-66 22-113 21-167 0v-78c0-24 10-44 33-44Z" fill="url(#glow)" opacity="0.95"/>
+      <rect x="114" y="142" width="284" height="200" rx="29" fill="#ffffff" opacity="0.1"/>
+      <path d="M132 158h124" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity="0.35"/>
+      <text x="256" y="243" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="900" fill="#ffffff" letter-spacing="3">ЕГЭ</text>
+      <g transform="translate(129 272)">
+        <rect x="0" y="0" width="254" height="54" rx="27" fill="#2e1065" opacity="0.36"/>
+        <text x="127" y="37" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#ffffff">1…100</text>
+        <circle cx="38" cy="27" r="13" fill="#ffffff" opacity="0.2"/>
+        <circle cx="216" cy="27" r="13" fill="#ffffff" opacity="0.2"/>
+      </g>
+      <path d="M148 371h216l30 36H118l30-36Z" fill="#4c1d95" opacity="0.86"/>
+      <path d="M160 371h192" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity="0.2"/>
+      <path d="M116 167c0-18 15-33 33-33h77" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" opacity="0.35"/>
+    </g>
+  </g>
+</svg>

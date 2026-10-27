@@ -1,0 +1,246 @@
+.testimonials {
+  padding: 100px 0;
+  margin-top: 100px;
+  background: linear-gradient(135deg, #4c0b8a, #6d28d9, #4c1d95);
+  border-radius: 32px;
+  height: 717px;
+
+  &__container {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 40px;
+  }
+
+  /* LEFT COLUMN */
+  &__content {
+    max-width: 420px;
+    justify-self: start;
+
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  /* TITLE */
+  &__title {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: left;
+
+    background: #ff4fd8;
+    color: #fff;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 10px;
+
+    width: fit-content;
+  }
+
+  /* TEXT */
+  &__description {
+    font-size: 16px;
+    color: #111;
+    line-height: 1.5;
+    text-align: left;
+
+    padding: 12px 14px;
+
+    background: #fff;
+    border-radius: 14px;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+
+    transform: rotate(-0.8deg);
+  }
+
+  /* RIGHT */
+  &__visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &__guy {
+    position: absolute;
+
+    left: 110%;
+    top: 65.3%;
+
+    transform: translateX(-50%);
+    z-index: 1;
+
+    width: 280px;
+    pointer-events: none;
+  }
+}
+
+/* PHONE (не трогаем) */
+.phone {
+  position: relative;
+  width: 20px;
+  transform: rotate(0deg) translateX(-200px);
+
+  &__frame {
+    width: 100%;
+    display: block;
+  }
+
+  &__screen {
+    position: absolute;
+    top: 14%;
+    left: 750%;
+    width: 2000%;
+    height: 83%;
+    overflow: hidden;
+    border-radius: 24px;
+  }
+
+  &__screen::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0) 20%,
+      rgba(255, 255, 255, 0) 80%,
+      rgba(255, 255, 255, 1)
+    );
+  }
+
+  &__reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+}
+
+/* REVIEW (не трогаем) */
+.review {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  background: #fff;
+
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.06),
+    0 1px 3px rgba(0, 0, 0, 0.04);
+
+  &__text {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  &__name {
+    font-size: 12px;
+    opacity: 0.6;
+  }
+}
+
+/* FORM (важно: теперь она просто продолжение колонки) */
+.testimonial-form {
+  margin-top: 16px;
+
+  background: linear-gradient(135deg, #4c0b8a, #6d28d9, #4c1d95);
+  border-radius: 24px;
+
+  padding: 24px;
+  color: #fff;
+
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+
+  &__inner {
+    max-width: 420px;
+  }
+
+  &__title {
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 900;
+
+    background: #ff4fd8;
+    color: #fff;
+
+    padding: 8px 14px;
+    border-radius: 12px;
+
+    transform: rotate(-2deg);
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #111;
+
+    margin-bottom: 16px;
+
+    padding: 12px 14px;
+
+    background: #fff;
+    border-radius: 14px;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+
+    transform: rotate(0.6deg);
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    border: none;
+    outline: none;
+
+    border-radius: 12px;
+    padding: 12px 14px;
+
+    font-size: 14px;
+
+    background: rgba(255, 255, 255, 0.95);
+    color: #111;
+  }
+
+  &__textarea {
+    min-height: 90px;
+    resize: none;
+  }
+
+  &__button {
+    background: #a3e635;
+    color: #111;
+
+    border: none;
+    border-radius: 999px;
+
+    padding: 12px 16px;
+
+    font-weight: 800;
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      background: #bef264;
+    }
+
+    &:active {
+      transform: scale(0.97);
+    }
+  }
+}

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Иконка шапки выпускника">
+
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4c0b8a"/>
+      <stop offset="52%" stop-color="#6d28d9"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.72"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="22%" r="75%">
+      <stop offset="0%" stop-color="#c4b5fd" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#6d28d9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#2e1065" flood-opacity="0.35"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.3"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="none"/>
+  <ellipse cx="256" cy="381" rx="150" ry="27" fill="#2e1065" opacity="0.16" filter="url(#soft)"/>
+  <g filter="url(#shadow)">
+    <path d="M62 198 256 98l194 100-194 100L62 198Z" fill="url(#g)"/>
+    <path d="M256 98 450 198 256 298V98Z" fill="#4c1d95" opacity="0.32"/>
+    <path d="M103 198 256 120l153 78-153 78-153-78Z" fill="url(#glow)" opacity="0.9"/>
+    <path d="M151 252c25 23 64 37 105 37s80-14 105-37v65c0 20-47 56-105 56s-105-36-105-56v-65Z" fill="url(#g)"/>
+    <path d="M174 270c23 14 51 22 82 22s59-8 82-22v28c-24 17-51 25-82 25s-58-8-82-25v-28Z" fill="#7c3aed" opacity="0.45"/>
+    <path d="M256 198h120c12 0 21 9 21 21v58" fill="none" stroke="#4c0b8a" stroke-width="17" stroke-linecap="round"/>
+    <circle cx="397" cy="279" r="18" fill="url(#g)"/>
+    <path d="M397 297c-20 29-25 55-20 84 1 9 10 14 18 10l23-11c7-3 10-11 6-18-12-23-14-43-9-62l-18-3Z" fill="url(#g)"/>
+    <path d="M142 190 256 133" stroke="#fff" stroke-width="11" stroke-linecap="round" opacity="0.34"/>
+    <path d="M168 283c22 19 54 29 88 29" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity="0.22"/>
+  </g>
+</svg>

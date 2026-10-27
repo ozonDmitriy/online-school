@@ -1,0 +1,70 @@
+.students {
+  padding: 80px 40px;
+  background: transparent;
+  text-align: center;
+
+  &__title {
+    font-size: 34px;
+    font-weight: 800;
+    color: #1f2937;
+
+    margin: 0 auto 60px auto;
+    line-height: 1.2;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+    flex-wrap: wrap;
+  }
+
+  &__winners {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 340px;
+  }
+
+  /* иконка СЛЕВА и БОЛЬШАЯ */
+  &__winners img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+  /* текстовый блок справа */
+  &__winners p {
+    margin: 0;
+    text-align: left;
+  }
+
+  &__trophyes-count,
+  &__graduation-procent {
+    font-size: 40px;
+    font-weight: 900;
+    color: #3f5fa8;
+    line-height: 1;
+  }
+
+  &__trophyes-title,
+  &__graduation-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #5b6472;
+    line-height: 1.4;
+    margin-top: 6px;
+    max-width: 240px;
+  }
+
+  /* лёгкий hover без фона */
+  &__winners {
+    transition: transform 0.25s ease;
+
+    &:hover {
+      transform: translateY(-6px);
+    }
+  }
+}

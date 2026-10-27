@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Иконка таблички ЕГЭ 1…100">
+
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4c0b8a"/>
+      <stop offset="52%" stop-color="#6d28d9"/>
+      <stop offset="100%" stop-color="#4c1d95"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.72"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="22%" r="75%">
+      <stop offset="0%" stop-color="#c4b5fd" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#6d28d9" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#2e1065" flood-opacity="0.35"/>
+    </filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.3"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="none"/>
+  <ellipse cx="256" cy="402" rx="151" ry="29" fill="#2e1065" opacity="0.16" filter="url(#soft)"/>
+  <g filter="url(#shadow)">
+    <rect x="88" y="116" width="336" height="252" rx="42" fill="url(#g)"/>
+    <path d="M121 116h259c24 0 44 20 44 44v68c-61-15-117-7-169 10-66 22-113 21-167 0v-78c0-24 10-44 33-44Z" fill="url(#glow)" opacity="0.95"/>
+    <rect x="114" y="142" width="284" height="200" rx="29" fill="#ffffff" opacity="0.1"/>
+    <path d="M132 158h124" stroke="#ffffff" stroke-width="10" stroke-linecap="round" opacity="0.35"/>
+    <text x="256" y="243" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="900" fill="#ffffff" letter-spacing="3">ЕГЭ</text>
+    <g transform="translate(129 272)">
+      <rect x="0" y="0" width="254" height="54" rx="27" fill="#2e1065" opacity="0.36"/>
+      <text x="127" y="37" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="800" fill="#ffffff">1…100</text>
+      <circle cx="38" cy="27" r="13" fill="#ffffff" opacity="0.2"/>
+      <circle cx="216" cy="27" r="13" fill="#ffffff" opacity="0.2"/>
+    </g>
+    <path d="M148 371h216l30 36H118l30-36Z" fill="#4c1d95" opacity="0.86"/>
+    <path d="M160 371h192" stroke="#ffffff" stroke-width="8" stroke-linecap="round" opacity="0.2"/>
+    <path d="M116 167c0-18 15-33 33-33h77" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" opacity="0.35"/>
+  </g>
+</svg>

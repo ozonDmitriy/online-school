@@ -1,0 +1,67 @@
+.programm {
+  width: 100%;
+  padding: 80px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+
+    color: #1b1f2a;
+  }
+
+  // 👇 ВАЖНО: твой wrapper
+  .programm_flex {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between; // 🔥 разносим влево/вправо
+    align-items: center;
+  }
+
+  // общий стиль обеих кнопок
+  &__grade-select,
+  &__period-switch {
+    display: inline-flex;
+    padding: 6px;
+    border-radius: 16px;
+    border: 2px solid #6d28d9;
+    gap: 6px;
+
+    background: transparent;
+
+    input {
+      display: none;
+    }
+
+    label {
+      padding: 10px 16px;
+      border-radius: 12px;
+
+      font-size: 14px;
+      font-weight: 600;
+
+      cursor: pointer;
+      user-select: none;
+
+      color: #4b5563;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: #111827;
+      }
+    }
+
+    input:checked + label {
+      background: linear-gradient(135deg, #4c0b8a, #6d28d9, #4c1d95);
+
+      color: #fff;
+      box-shadow: 0 10px 25px rgba(76, 12, 138, 0.35);
+    }
+  }
+}

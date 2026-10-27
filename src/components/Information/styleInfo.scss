@@ -1,0 +1,165 @@
+.about-school {
+  width: 100%;
+  padding-top: 80px;
+  box-sizing: border-box;
+
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    margin: 0 0 16px 0;
+  }
+
+  &__description {
+    font-size: 19px;
+    line-height: 1.6;
+    font-family: "Montserrat", sans-serif;
+    color: #333;
+    margin: 0 0 14px 0;
+  }
+
+  /* VIDEO */
+  &__video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  }
+
+  &__video iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  /* GALLERY */
+  &__gallery {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__gallery img {
+    flex: 1;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+
+  /* =========================
+     STATS (MASONRY GRID)
+  ========================= */
+
+  &__stats {
+    margin-top: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 6px;
+    gap: 16px;
+    position: relative;
+  }
+
+  &__stat {
+    background: #fff;
+    border-radius: 18px;
+    padding: 18px 16px;
+
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+
+    /* 🔥 ГЛАВНОЕ ИСПРАВЛЕНИЕ */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    gap: 6px;
+
+    overflow: hidden;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+
+    grid-row: span 12;
+  }
+
+  /* вариативность высоты */
+  &__stat:nth-child(2) {
+    grid-row: span 18;
+  }
+
+  &__stat:nth-child(3) {
+    grid-row: span 12;
+  }
+
+  &__stat:nth-child(4) {
+    grid-row: span 16;
+  }
+
+  &__stat:nth-child(5) {
+    grid-row: span 15;
+  }
+
+  &__stat:nth-child(6) {
+    grid-row: span 13;
+  }
+
+  &__stat:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  }
+
+  &__num {
+    font-size: 36px;
+    font-weight: 900;
+    color: #6d28d9;
+    line-height: 1;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #111;
+    line-height: 1.4;
+  }
+}
+.about-school__stats-wrapper {
+  position: relative;
+}
+
+/* ✏️ слой с рисующимся текстом */
+.stats-draw-bg {
+  position: absolute;
+
+  inset: 0;
+  z-index: 300;
+  --y: 180px;
+  transform: translateY(var(--y));
+  pointer-events: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  opacity: 1.6; 
+}
+
+/* 📊 карточки выше анимации */
+.about-school__stats {
+  position: relative;
+  z-index: 2;
+}
