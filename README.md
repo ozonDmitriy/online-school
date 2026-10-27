@@ -1,42 +1,109 @@
-# onlineSchool
+# EDURUSH
 
-This template should help get you started developing with Vue 3 in Vite.
+### Онлайн-школа
 
-## Recommended IDE Setup
+EDURUSH — веб-сайт образовательного проекта, созданный для презентации школы, знакомства с учебными программами и предоставления информации для будущих учеников.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Сайт объединяет информацию об образовательном процессе, доступных программах, стоимости обучения и отзывах. Отдельный раздел посвящён контактам для связи со школой.
 
-## Recommended Browser Setup
+## О проекте
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+EDURUSH разработан с использованием современных инструментов frontend-разработки. Структура приложения разделена на компоненты, каждый из которых отвечает за определённую часть интерфейса. Такой подход упрощает поддержку кода и дальнейшее развитие проекта.
 
-## Type Support for `.vue` Imports in TS
+## Основные разделы
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- **О школе** — информация об образовательном проекте.
+- **Учебные программы** — представление доступных направлений обучения.
+- **Стоимость обучения** — информация о программах и их стоимости.
+- **Отзывы** — раздел с отзывами об обучении.
+- **Контакты** — информация для связи со школой.
 
-## Customize configuration
+## Технологии
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+| Технология   | Назначение                             |
+| ------------ | -------------------------------------- |
+| Vue 3        | Создание пользовательского интерфейса  |
+| TypeScript   | Типизация и контроль корректности кода |
+| Vite         | Сервер разработки и сборка проекта     |
+| SCSS         | Организация и стилизация стилей        |
+| Sass         | Препроцессор для работы со стилями     |
+| Vue DevTools | Инструменты отладки приложения         |
 
-## Project Setup
+## Запуск проекта
 
-```sh
+### Требования
+
+- Node.js версии `22.18.0` или новее в рамках поддерживаемых версий проекта.
+- npm.
+
+### Установка
+
+Клонируйте репозиторий:
+
+```bash
+git clone https://github.com/ozonDmitriy/online-school.git
+cd online-school
+```
+
+Установите зависимости:
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Режим разработки
 
-```sh
+```bash
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+После запуска откройте адрес, указанный в терминале.
 
-```sh
+### Сборка проекта
+
+```bash
 npm run build
 ```
+
+Команда выполняет проверку типов TypeScript и собирает приложение для production.
+
+### Просмотр production-сборки
+
+```bash
+npm run preview
+```
+
+## Структура проекта
+
+```text
+online-school/
+├── public/                  # Статические ресурсы
+├── icons/                   # Иконки проекта
+├── src/
+│   ├── components/
+│   │   ├── AboutSchool/     # Информация о школе
+│   │   ├── buyProgramm/     # Раздел выбора программы
+│   │   ├── contacts/        # Контактная информация
+│   │   ├── header/          # Шапка сайта
+│   │   ├── Information/     # Информационные блоки
+│   │   ├── ourStudents/     # Раздел об учениках
+│   │   ├── Programm/        # Стоимость программ
+│   │   └── reviews/         # Отзывы
+│   ├── views/               # Представления приложения
+│   ├── App.vue              # Корневой компонент
+│   └── main.ts              # Точка входа
+├── index.html               # HTML-шаблон
+├── package.json             # Зависимости и команды
+├── tsconfig.json            # Конфигурация TypeScript
+└── vite.config.ts           # Конфигурация Vite
+```
+
+## Разработка
+
+Проект использует компонентный подход Vue 3 и TypeScript. Vite обеспечивает запуск локального сервера и сборку приложения, а SCSS используется для организации стилей.
+
+EDURUSH можно развивать дальше, расширяя учебные разделы, улучшая пользовательский интерфейс и добавляя новые возможности для учеников.
+
+---
+
+**EDURUSH** — образование, открывающее новые возможности.

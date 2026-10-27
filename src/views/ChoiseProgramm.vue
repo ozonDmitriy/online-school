@@ -21,7 +21,6 @@ const periodLabels = {
 
 const price = computed(() => priceMap[period.value]);
 
-// 👇 ТАРИФЫ
 const tariffs = computed(() => [
   {
     type: "basic",
